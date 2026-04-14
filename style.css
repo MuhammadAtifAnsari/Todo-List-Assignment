@@ -43,12 +43,12 @@ h1{
 }
 
 /* SEARCH ICON */
-#search-icon{
+/* #search-icon{
   position: absolute;
   color: black;
   top: 31.5%;
   left: 34.66%;
-}
+} */
 
 /*CREATE BUTTON DESIGN*/
 #add-btn, #allclear-btn, #update-btn{
