@@ -67,7 +67,7 @@ function render() {
     for(var i = 0; i < todosArray.length; i++){
         if(todosArray[i].isCompleted === true){
 
-            ShowTodoTask.innerHTML += `<ul class='list-item-task done'>
+            ShowTodoTask.innerHTML += `<ul class='list-item-task done animate__animated animate__lightSpeedInRight'>
             <span>${todosArray[i].text}</span>
             <span class='btn-span edit'><button onClick='editTask(${todosArray[i].id})' disabled> <span class=edit-span'>Edit</span> <span class='edit-icon'><i class="fa-solid fa-pen-to-square"></i></span> </button></span>                        
             <span class='btn-span ok'><button onClick='okTask(${todosArray[i].id})' disabled> <span class=ok-span'>OK</span> <span class='ok-icon'><i class="fa-solid fa-circle-check"></i></span> </button></span>                                   
@@ -76,7 +76,7 @@ function render() {
         }
         else{
             
-            ShowTodoTask.innerHTML += `<ul class='list-item-task'>
+            ShowTodoTask.innerHTML += `<ul class='list-item-task animate__animated animate__lightSpeedInRight'>
             <span>${todosArray[i].text}</span>
             <span class='btn-span edit'><button class="edit-btn" onClick='editTask(${todosArray[i].id})'> 
              <span class='edit-span'>Edit</span>
